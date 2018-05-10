@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="video_loopback.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.21161218" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType">
+<configuration artifactExtension="out" artifactName="video_loopback" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.186645802" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.DebugToolchain.504705858" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerDebug.1417593691">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1891067108" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C64XX"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=none"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+<listOptionValue builtIn="false" value="RTSC_PRODUCTS=com.ti.rtsc.XDAIS:latest;"/>
+<listOptionValue builtIn="false" value="LINK_ORDER="/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.874098727" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.2.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.compilerDebug.1748017559" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING.181803868" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH.152532333" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${XDAIS_CG_ROOT}/packages/ti/xdais&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${C6000_CSL_CG_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${EXT_ROOT__video_loopback}/../../include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;F:\Program Files (x86)\Texas Instruments\ccsv4\C6000\cgtools\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;F:\Program Files (x86)\Texas Instruments\ccsv4\C6000\csl\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;F:\Program Files (x86)\Texas Instruments\ccsv4\evmdm6437_v2\include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.908792869" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.coffabi" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.QUIET_LEVEL.1755698092" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.QUIET_LEVEL" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.QUIET_LEVEL.QUIET" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE.187476645" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE.manual" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DEFINE.2116688791" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="&quot;_DEBUG&quot;"/>
+<listOptionValue builtIn="false" value="CHIP_6437"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION.154557975" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION" value="6400+" valueType="string"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerDebug.1417593691" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.OUTPUT_FILE.1560771163" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.OUTPUT_FILE" value="&quot;video_loopback.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.MAP_FILE.1580901565" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.MAP_FILE" value="&quot;video_loopback.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.SEARCH_PATH.1927478297" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${EXT_ROOT__video_loopback}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${C6000_CSL_CG_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;F:\Program Files (x86)\Texas Instruments\ccsv4\C6000\cgtools\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;F:\Program Files (x86)\Texas Instruments\ccsv4\C6000\csl\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;F:\Program Files (x86)\Texas Instruments\ccsv4\evmdm6437_v2\lib&quot;"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="out" artifactName="video_loopback" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Release.2074116196" name="Release" parent="com.ti.ccstudio.buildDefinitions.C6000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.ReleaseToolchain.1810538100" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerRelease.1231020819">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.169871314" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C64XX"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=none"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+<listOptionValue builtIn="false" value="RTSC_PRODUCTS=com.ti.rtsc.XDAIS:latest;"/>
+<listOptionValue builtIn="false" value="LINK_ORDER="/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1111935146" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.2.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.compilerRelease.2053236618" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING.924388058" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH.1663506603" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${XDAIS_CG_ROOT}/packages/ti/xdais&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${C6000_CSL_CG_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${EXT_ROOT__video_loopback}/../../include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.1640405468" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.coffabi" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.QUIET_LEVEL.1634931072" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.QUIET_LEVEL" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.QUIET_LEVEL.QUIET" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OPT_LEVEL.release.309312469" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OPT_LEVEL.release" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OPT_LEVEL.3" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE.1351585540" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE.manual" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION.896215619" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION" value="6400+" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DEBUGGING_MODEL.1102750868" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DEBUGGING_MODEL._none" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerRelease.1231020819" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.OUTPUT_FILE.1806785983" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.OUTPUT_FILE" value="&quot;video_loopback.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.MAP_FILE.249267008" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.MAP_FILE" value="&quot;video_loopback.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.SEARCH_PATH.1647469352" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${EXT_ROOT__video_loopback}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${C6000_CSL_CG_ROOT}/lib&quot;"/>
+</option>
+</tool>
+</toolChain>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

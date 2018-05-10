@@ -1,0 +1,1022 @@
+******************************************************************************
+               TMS320C6x Linker PC v7.2.3                      
+******************************************************************************
+>> Linked Thu Apr 26 16:24:54 2018
+
+OUTPUT FILE NAME:   <MuseX_v2.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 80182480
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  BOOT_RAM              10800000   00000400  00000080  00000380  RWIX
+  INT                   10800400   00000400  00000200  00000200  RWIX
+  L2RAM                 10800800   00020000  000086ab  00017955  RWIX
+  DDR2                  80000000   10000000  001829e0  0fe7d620  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.boot_load 
+*          0    10800000    00000080     
+                  10800000    00000080     boot.obj (.boot_load)
+
+.vectors   0    10800400    00000200     
+                  10800400    00000200     vecs_timer.obj (.vectors)
+
+.data      0    10800800    00000000     UNINITIALIZED
+
+.far       0    10800800    00005098     UNINITIALIZED
+                  10800800    00004960     MuseX_v2_main_calib.obj (.far)
+                  10805160    00000390     aic33_functions.obj (.far)
+                  108054f0    00000194     rts64plus.lib : defs.obj (.far)
+                  10805684    00000004                   : errno.obj (.far)
+                  10805688    000000d0                   : trgdrv.obj (.far)
+                  10805758    000000cc                   : lowlev.obj (.far)
+                  10805824    00000004                   : fopen.obj (.far)
+                  10805828    00000020     evmdm6437bsl.lib : evmdm6437_gpio.obj (.far)
+                  10805848    00000018                      : evmdm6437_mcasp.obj (.far)
+                  10805860    00000010     rts64plus.lib : sinf.obj (.far)
+                  10805870    0000000c     evmdm6437bsl.lib : evmdm6437_flash_id.obj (.far)
+                  1080587c    0000000c     rts64plus.lib : exit.obj (.far)
+                  10805888    00000008                   : _lock.obj (.far)
+                  10805890    00000008                   : memory.obj (.far)
+
+.cinit     0    10805898    000010b4     
+                  10805898    00000a94     MuseX_v2_main_calib.obj (.cinit)
+                  1080632c    00000004     --HOLE-- [fill = 0]
+                  10806330    000003c8     aic33_functions.obj (.cinit)
+                  108066f8    0000005c     rts64plus.lib : defs.obj (.cinit)
+                  10806754    00000004     --HOLE-- [fill = 0]
+                  10806758    0000005c                   : lowlev.obj (.cinit)
+                  108067b4    00000004     --HOLE-- [fill = 0]
+                  108067b8    00000058     evmdm6437bsl.lib : evmdm6437_gpio.obj (.cinit)
+                  10806810    0000003c                      : evmdm6437_flash_id.obj (.cinit)
+                  1080684c    00000004     --HOLE-- [fill = 0]
+                  10806850    0000002c     rts64plus.lib : exit.obj (.cinit)
+                  1080687c    00000004     --HOLE-- [fill = 0]
+                  10806880    0000002c                   : memory.obj (.cinit)
+                  108068ac    00000004     --HOLE-- [fill = 0]
+                  108068b0    0000001c     evmdm6437bsl.lib : evmdm6437_mcasp.obj (.cinit)
+                  108068cc    00000004     --HOLE-- [fill = 0]
+                  108068d0    0000001c     rts64plus.lib : _lock.obj (.cinit)
+                  108068ec    00000004     --HOLE-- [fill = 0]
+                  108068f0    00000018                   : sinf.obj (.cinit)
+                  10806908    0000000c     evmdm6437bsl.lib : evmdm6437_i2c.obj (.cinit)
+                  10806914    00000004     --HOLE-- [fill = 0]
+                  10806918    0000000c                      : evmdm6437_psc.obj (.cinit)
+                  10806924    00000004     --HOLE-- [fill = 0]
+                  10806928    0000000c     rts64plus.lib : errno.obj (.cinit)
+                  10806934    00000004     --HOLE-- [fill = 0]
+                  10806938    0000000c                   : fopen.obj (.cinit)
+                  10806944    00000004     --HOLE-- [fill = 0]
+                  10806948    00000004     (.pad.cinit) [fill = 0]
+
+.stack     0    10806950    00001000     UNINITIALIZED
+                  10806950    00000008     rts64plus.lib : boot.obj (.stack)
+                  10806958    00000ff8     --HOLE--
+
+.sysmem    0    10807950    00001000     UNINITIALIZED
+                  10807950    00000008     rts64plus.lib : memory.obj (.sysmem)
+                  10807958    00000ff8     --HOLE--
+
+.const     0    10808950    000002c0     
+                  10808950    00000101     rts64plus.lib : ctype.obj (.const:__ctypes_)
+                  10808a51    00000002                   : fputs.obj (.const:.string)
+                  10808a53    00000001     --HOLE-- [fill = 0]
+                  10808a54    000000d8     MuseX_v2_main_calib.obj (.const:.string)
+                  10808b2c    000000b0     video_loopback_test.obj (.const:.string)
+                  10808bdc    00000023     rts64plus.lib : _printfi.obj (.const:.string)
+                  10808bff    00000001     --HOLE-- [fill = 0]
+                  10808c00    00000008                   : divd.obj (.const:_initial_approx$1)
+                  10808c08    00000008                   : divf.obj (.const:_initial_approx$1)
+
+.bss       0    10808c10    00000133     UNINITIALIZED
+                  10808c10    00000114     MuseX_v2_main_calib.obj (.bss)
+                  10808d24    00000010     evmdm6437bsl.lib : evmdm6437_flash_id.obj (.bss)
+                  10808d34    00000004                      : evmdm6437_i2c.obj (.bss)
+                  10808d38    00000004                      : evmdm6437_mcasp.obj (.bss)
+                  10808d3c    00000004                      : evmdm6437_psc.obj (.bss)
+                  10808d40    00000003     tvp5146.obj (.bss)
+
+.cio       0    10808d44    00000120     UNINITIALIZED
+                  10808d44    00000120     rts64plus.lib : trgmsg.obj (.cio)
+
+.switch    0    10808e64    0000004c     
+                  10808e64    00000020     evmdm6437bsl.lib : evmdm6437.obj (.switch)
+                  10808e84    00000018     MuseX_v2_main_calib.obj (.switch:_processHand)
+                  10808e9c    00000014     MuseX_v2_main_calib.obj (.switch:_getGesture)
+
+.ddr2      0    80000000    00172500     UNINITIALIZED
+                  80000000    00172500     MuseX_v2_main_calib.obj (.ddr2)
+
+.text      0    80172500    000104e0     
+                  80172500    00005920     MuseX_v2_main_calib.obj (.text)
+                  80177e20    000006a0     rts64plus.lib : divd.obj (.text:__divd)
+                  801784c0    000005a0     evmdm6437bsl.lib : evmdm6437_mcasp.obj (.text)
+                  80178a60    00000580     rts64plus.lib : _printfi.obj (.text:__getarg_diouxp)
+                  80178fe0    00000480                   : _printfi.obj (.text:__setfield)
+                  80179460    00000460                   : _printfi.obj (.text:__printfi)
+                  801798c0    00000460     evmdm6437bsl.lib : evmdm6437_pll.obj (.text)
+                  80179d20    000003e0     rts64plus.lib : divf.obj (.text:__divf)
+                  8017a100    000003e0     video_loopback_test.obj (.text)
+                  8017a4e0    000003a0     evmdm6437bsl.lib : evmdm6437.obj (.text)
+                  8017a880    00000300     rts64plus.lib : addf.obj (.text:__addf)
+                  8017ab80    00000300                   : _printfi.obj (.text:_ecvt)
+                  8017ae80    00000300                   : _printfi.obj (.text:_fcvt)
+                  8017b180    00000300                   : fputs.obj (.text:_fputs)
+                  8017b480    00000300     evmdm6437bsl.lib : evmdm6437_flash_id.obj (.text)
+                  8017b780    000002e0     rts64plus.lib : _printfi.obj (.text:__pproc_fge)
+                  8017ba60    000002e0                   : _printfi.obj (.text:__pproc_fwp)
+                  8017bd40    000002c0                   : sinf.obj (.text:_sinf)
+                  8017c000    000002a0                   : _printfi.obj (.text:__pconv_e)
+                  8017c2a0    000002a0     evmdm6437bsl.lib : evmdm6437_aic33_registers.obj (.text)
+                  8017c540    00000280     rts64plus.lib : memory.obj (.text:_free)
+                  8017c7c0    00000260                   : imath64.obj (.text:__divull)
+                  8017ca20    00000260                   : mpyd.obj (.text:__mpyd)
+                  8017cc80    00000260     evmdm6437bsl.lib : evmdm6437_i2c.obj (.text)
+                  8017cee0    00000260     MuseX_v2_main_calib.obj (.text:retain)
+                  8017d140    00000240     evmdm6437bsl.lib : evmdm6437_psc.obj (.text)
+                  8017d380    00000220     rts64plus.lib : _printfi.obj (.text:__pproc_diouxp)
+                  8017d5a0    00000220                   : _printfi.obj (.text:__pproc_str)
+                  8017d7c0    00000220                   : sqrt.obj (.text:_sqrt)
+                  8017d9e0    00000200                   : addd.obj (.text:__addd)
+                  8017dbe0    00000200                   : frcaddd.obj (.text:__frcaddd)
+                  8017dde0    00000200                   : mpyf.obj (.text:__mpyf)
+                  8017dfe0    00000200                   : _printfi.obj (.text:__pconv_g)
+                  8017e1e0    000001e0     evmdm6437bsl.lib : evmdm6437_i2c_gpio.obj (.text)
+                  8017e3c0    000001c0     rts64plus.lib : _printfi.obj (.text:__mcpy)
+                  8017e580    000001c0                   : ldexp.obj (.text:_ldexp)
+                  8017e740    000001c0     evmdm6437bsl.lib : evmdm6437_gpio.obj (.text)
+                  8017e900    000001a0     rts64plus.lib : imath40.obj (.text:__divul)
+                  8017eaa0    000001a0                   : frexp.obj (.text:_frexp)
+                  8017ec40    000001a0                   : setvbuf.obj (.text:_setvbuf)
+                  8017ede0    000001a0     evmdm6437bsl.lib : evmdm6437_aic33_opencodec.obj (.text)
+                  8017ef80    00000180     rts64plus.lib : trgdrv.obj (.text:_HOSTrename)
+                  8017f100    00000180                   : frcmpyd_div.obj (.text:__frcmpyd_div)
+                  8017f280    00000180                   : memory.obj (.text:_malloc)
+                  8017f400    00000180     tvp5146.obj (.text)
+                  8017f580    00000160     evmdm6437bsl.lib : evmdm6437_ddr.obj (.text)
+                  8017f6e0    00000140     rts64plus.lib : fputc.obj (.text:_fputc)
+                  8017f820    00000140                   : lowlev.obj (.text:_getdevice)
+                  8017f960    00000140     evmdm6437bsl.lib : evmdm6437_flash.obj (.text)
+                  8017faa0    00000120     rts64plus.lib : _printfi.obj (.text:__pproc_fflags)
+                  8017fbc0    00000120                   : fclose.obj (.text:_fclose)
+                  8017fce0    00000100                   : trgdrv.obj (.text:_HOSTlseek)
+                  8017fde0    00000100                   : autoinit.obj (.text:__auto_init)
+                  8017fee0    00000100                   : frcmpyd.obj (.text:__frcmpyd)
+                  8017ffe0    00000100                   : _printfi.obj (.text:__ltostr)
+                  801800e0    00000100                   : _io_perm.obj (.text:__wrt_ok)
+                  801801e0    000000e0                   : trgdrv.obj (.text:_HOSTopen)
+                  801802c0    000000e0                   : cmpd.obj (.text:__cmpd)
+                  801803a0    000000e0                   : divi.obj (.text:__divi)
+                  80180480    000000e0                   : roundf.obj (.text:__roundf)
+                  80180560    000000e0                   : atoi.obj (.text:_atoi)
+                  80180640    000000e0                   : lowlev.obj (.text:_close)
+                  80180720    000000e0                   : exit.obj (.text:_exit)
+                  80180800    000000e0                   : memset.obj (.text:_memset)
+                  801808e0    000000c0                   : trgdrv.obj (.text:_HOSTread)
+                  801809a0    000000c0                   : trgdrv.obj (.text:_HOSTunlink)
+                  80180a60    000000c0                   : trgdrv.obj (.text:_HOSTwrite)
+                  80180b20    000000c0                   : fopen.obj (.text:__cleanup)
+                  80180be0    000000c0                   : _printfi.obj (.text:__div)
+                  80180ca0    000000c0                   : divu.obj (.text:__divu)
+                  80180d60    000000c0                   : fflush.obj (.text:__doflush)
+                  80180e20    000000c0                   : remi.obj (.text:__remi)
+                  80180ee0    000000c0                   : fseek.obj (.text:_fseek)
+                  80180fa0    000000c0                   : lowlev.obj (.text:_lseek)
+                  80181060    000000c0                   : ltoa.obj (.text:_ltoa)
+                  80181120    000000c0                   : lowlev.obj (.text:_write)
+                  801811e0    000000a0                   : trgdrv.obj (.text:_HOSTclose)
+                  80181280    000000a0                   : cvtdf.obj (.text:__cvtdf)
+                  80181320    000000a0                   : imath40.obj (.text:__divli)
+                  801813c0    000000a0                   : _printfi.obj (.text:__ecpy)
+                  80181460    000000a0                   : _printfi.obj (.text:__fcpy)
+                  80181500    000000a0                   : fixdli.obj (.text:__fixdli)
+                  801815a0    000000a0                   : frcmpyf_div.obj (.text:__frcmpyf_div)
+                  80181640    000000a0                   : _printfi.obj (.text:__pconv_f)
+                  801816e0    000000a0                   : cpy_tbl.obj (.text:_copy_in)
+                  80181780    000000a0                   : lowlev.obj (.text:_finddevice)
+                  80181820    000000a0                   : memcpy64.obj (.text:_memcpy)
+                  801818c0    000000a0                   : memory.obj (.text:_minsert)
+                  80181960    000000a0                   : memory.obj (.text:_mremove)
+                  80181a00    000000a0     evmdm6437bsl.lib : evmdm6437_aic33_closecodec.obj (.text)
+                  80181aa0    000000a0                      : evmdm6437_aic33_read16.obj (.text)
+                  80181b40    000000a0                      : evmdm6437_aic33_read32.obj (.text)
+                  80181be0    000000a0                      : evmdm6437_aic33_write16.obj (.text)
+                  80181c80    000000a0                      : evmdm6437_aic33_write32.obj (.text)
+                  80181d20    00000080     rts64plus.lib : cmpf.obj (.text:__cmpf)
+                  80181da0    00000080                   : fixdi.obj (.text:__fixdi)
+                  80181e20    00000080                   : fixdu.obj (.text:__fixdu)
+                  80181ea0    00000080                   : fixfi.obj (.text:__fixfi)
+                  80181f20    00000080                   : fltlid.obj (.text:__fltlid)
+                  80181fa0    00000080                   : llshift.obj (.text:__llshl)
+                  80182020    00000080                   : renormd.obj (.text:__renormd)
+                  801820a0    00000080                   : printf.obj (.text:_printf)
+                  80182120    00000080                   : trgmsg.obj (.text:_readmsg)
+                  801821a0    00000080                   : lowlev.obj (.text:_unlink)
+                  80182220    00000080     evmdm6437bsl.lib : evmdm6437_dip.obj (.text)
+                  801822a0    00000060     rts64plus.lib : cvtfd.obj (.text:__cvtfd)
+                  80182300    00000060                   : fltid.obj (.text:__fltid)
+                  80182360    00000060                   : fltif.obj (.text:__fltif)
+                  801823c0    00000060                   : frcmpyf.obj (.text:__frcmpyf)
+                  80182420    00000060                   : imath64.obj (.text:__subcull)
+                  80182480    00000060                   : boot.obj (.text:_c_int00)
+                  801824e0    00000060                   : memccpy.obj (.text:_memccpy)
+                  80182540    00000060                   : modff.obj (.text:_modff)
+                  801825a0    00000060                   : trgmsg.obj (.text:_writemsg)
+                  80182600    00000040                   : isinf.obj (.text:___isinf)
+                  80182640    00000040                   : _printfi.obj (.text:___isnan)
+                  80182680    00000040                   : divd.obj (.text:___isnan)
+                  801826c0    00000040                   : args_main.obj (.text:__args_main)
+                  80182700    00000040                   : fltud.obj (.text:__fltud)
+                  80182740    00000040                   : llshift.obj (.text:__llshru)
+                  80182780    00000040                   : negd.obj (.text:__negd)
+                  801827c0    00000040                   : negf.obj (.text:__negf)
+                  80182800    00000040                   : imath40.obj (.text:__remli)
+                  80182840    00000040                   : subd.obj (.text:__subd)
+                  80182880    00000040                   : subf.obj (.text:__subf)
+                  801828c0    00000020                   : divf.obj (.text:___isnanf)
+                  801828e0    00000020                   : negll.obj (.text:__negll)
+                  80182900    00000020                   : _lock.obj (.text:__nop)
+                  80182920    00000020                   : printf.obj (.text:__outc)
+                  80182940    00000020                   : printf.obj (.text:__outs)
+                  80182960    00000020                   : truncf.obj (.text:__truncf)
+                  80182980    00000020                   : exit.obj (.text:_abort)
+                  801829a0    00000020                   : remove.obj (.text:_remove)
+                  801829c0    00000020     vecs_timer.obj (.text)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+10808c10   $bss
+10808c10   .bss
+10800800   .data
+80172500   .text
+80182980   C$$EXIT
+801825f8   C$$IO$$
+80181a00   _EVMDM6437_AIC33_closeCodec
+8017c474   _EVMDM6437_AIC33_config
+8017ede0   _EVMDM6437_AIC33_openCodec
+80181aa0   _EVMDM6437_AIC33_read16
+80181b40   _EVMDM6437_AIC33_read32
+8017c2a0   _EVMDM6437_AIC33_rget
+8017c350   _EVMDM6437_AIC33_rset
+8017c3b8   _EVMDM6437_AIC33_rset_mask
+80181be0   _EVMDM6437_AIC33_write16
+80181c80   _EVMDM6437_AIC33_write32
+8017f580   _EVMDM6437_DDR_init
+8018222c   _EVMDM6437_DIP_get
+80182220   _EVMDM6437_DIP_init
+8017b598   _EVMDM6437_FLASH_getTotalPages
+8017f960   _EVMDM6437_FLASH_init
+8017e884   _EVMDM6437_GPIO_getInput
+8017e740   _EVMDM6437_GPIO_init
+8017e754   _EVMDM6437_GPIO_setDir
+8017e7f4   _EVMDM6437_GPIO_setOutput
+8017e380   _EVMDM6437_I2C_GPIO_checkIntr
+8017e2f4   _EVMDM6437_I2C_GPIO_getInput
+8017e1f8   _EVMDM6437_I2C_GPIO_getall
+8017e1e0   _EVMDM6437_I2C_GPIO_init
+8017e244   _EVMDM6437_I2C_GPIO_setOutput
+8017e220   _EVMDM6437_I2C_GPIO_setall
+8017e348   _EVMDM6437_I2C_GPIO_setupIntr
+8017e390   _EVMDM6437_I2C_GPIO_waitForIntr
+8017ccc0   _EVMDM6437_I2C_close
+8017cc80   _EVMDM6437_I2C_init
+8017cde0   _EVMDM6437_I2C_read
+8017ccd4   _EVMDM6437_I2C_reset
+8017cce8   _EVMDM6437_I2C_write
+80178980   _EVMDM6437_MCASP_close
+8017856c   _EVMDM6437_MCASP_open
+8017d1f0   _EVMDM6437_PSC_changeState
+8017d140   _EVMDM6437_PSC_enableAll
+801798c0   _EVMDM6437_enablePll1
+80179ac4   _EVMDM6437_enablePll2
+8017a540   _EVMDM6437_init
+8017a4e0   _EVMDM6437_startupGEL
+10808ca4   _G_fb
+801811e0   _HOSTclose
+8017fce0   _HOSTlseek
+801801e0   _HOSTopen
+801808e0   _HOSTread
+8017ef80   _HOSTrename
+801809a0   _HOSTunlink
+80180a60   _HOSTwrite
+10804710   _L_x
+10804730   _L_y
+10808d44   __CIOBUF_
+8017b480   __FLASH_getId
+8017b584   __FLASH_getMfg
+8017b6d8   __FLASH_getPageLength
+8017b6e4   __FLASH_nextPage
+8017f9ac   __FLASH_waitWhileErasing
+8017fa18   __FLASH_waitWhileProgramming
+801784c0   __MCASP_setRGBLCTL
+80178514   __MCASP_setXGBLCTL
+10807950   __STACK_END
+00001000   __STACK_SIZE
+00001000   __SYSMEM_SIZE
+00000001   __TI_args_main
+10805884   ___TI_enable_exit_profile_output
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+10808c10   ___bss__
+ffffffff   ___c_args__
+10805898   ___cinit__
+10800800   ___data__
+10800800   ___edata__
+10808d43   ___end__
+801829e0   ___etext__
+80182600   ___isinf
+ffffffff   ___pinit__
+80172500   ___text__
+8017d9e0   __addd
+8017a880   __addf
+801826c0   __args_main
+8017fde0   __auto_init
+801803a0   __c6xabi_divi
+80180ca0   __c6xabi_divu
+80180e20   __c6xabi_remi
+80180b20   __cleanup
+1080587c   __cleanup_ptr
+8017a5f4   __clrPinMux
+801802c0   __cmpd
+80181d20   __cmpf
+10808950   __ctypes_
+80181280   __cvtdf
+801822a0   __cvtfd
+80177e20   __divd
+80179d20   __divf
+801803a0   __divi
+80181320   __divli
+80180ca0   __divu
+8017e900   __divul
+8017c7c0   __divull
+80180d60   __doflush
+10805880   __dtors_ptr
+80181da0   __fixdi
+80181500   __fixdli
+80181e20   __fixdu
+80181ea0   __fixfi
+80182300   __fltid
+80182360   __fltif
+80181f20   __fltlid
+80182700   __fltud
+8017dbe0   __frcaddd
+8017fee0   __frcmpyd
+8017f100   __frcmpyd_div
+801823c0   __frcmpyf
+801815a0   __frcmpyf_div
+10805680   __ft_end
+108054f0   __ftable
+80181fa0   __llshl
+80182740   __llshru
+10805888   __lock
+8017ca20   __mpyd
+8017dde0   __mpyf
+80182780   __negd
+801827c0   __negf
+801828e0   __negll
+80182900   __nop
+80179460   __printfi
+80180e20   __remi
+80182800   __remli
+80182020   __renormd
+8017a638   __resetEMIF
+80180480   __roundf
+8017a5b0   __setPinMux
+8017a734   __setupEMIF
+8017a574   __setupPinMux
+10806950   __stack
+80182420   __subcull
+80182840   __subd
+80182880   __subf
+10807950   __sys_memory
+108055e0   __tmpnams
+80182960   __truncf
+1080588c   __unlock
+8017a818   __wait
+8017a84c   __waitusec
+801800e0   __wrt_ok
+10808c90   _a
+10804490   _a_x
+108044b8   _a_y
+80182980   _abort
+10808c12   _aic33handle
+10808cd0   _ap1_prev
+10808cd2   _ap2_prev
+10808cd4   _ap3_prev
+10808cd6   _ap4_prev
+80176598   _apply_dist
+80177110   _apply_echo
+80177444   _apply_flange
+801768f4   _apply_phase
+80180560   _atoi
+10808c94   _b
+10804430   _b_x
+10804460   _b_y
+10801300   _binary_boundary
+108008d0   _binary_hand
+10800000   _boot
+10804de0   _btnBotLeft
+80151800   _buffer_echo
+108049d0   _buffer_flanger
+800a8c00   _buffer_in
+80000000   _buffer_out
+80182480   _c_int00
+108044e0   _c_x
+10804508   _c_y
+10804dec   _centroid
+10808d42   _chipid_lsb
+10808d41   _chipid_msb
+80173878   _clearDisplay
+80180640   _close
+80164400   _convex_hull
+801816e0   _copy_in
+10804e04   _curCentroid
+10808d04   _curGesture
+10804630   _d_lc_x
+10804658   _d_lc_y
+10808cf4   _d_start_y
+10804300   _d_x
+10804328   _d_y
+10808ca8   _depth
+10801c60   _display
+10804d90   _dist
+10808d00   _e_start_y
+108043e0   _e_x
+10804408   _e_y
+10804dcc   _echo
+10805684   _errno
+80180720   _exit
+8017cee0   _extint14_isr
+10808cfc   _f_start_y
+108043a0   _f_x
+108043c0   _f_y
+10808c24   _faderBottom
+10808c28   _faderDispW
+8017fbc0   _fclose
+80172df0   _findCentroid
+10808d0c   _finger_ct
+10808c10   _flag
+10808c77   _flag_resetGesture
+10808c75   _flag_selectFx
+10808c74   _flag_systemOn
+10808c76   _flag_tuneFx
+10804db8   _flanger
+10808ca0   _flanger_lfo_count
+8017f6e0   _fputc
+8017b180   _fputs
+80175f54   _frameProcessing
+10808d10   _frame_ct
+8017c540   _free
+8017eaa0   _frexp
+80180ee0   _fseek
+10804680   _g_x
+108046b0   _g_y
+10808ce4   _gain_fb
+10808ce0   _gain_ff
+10808c8c   _gamma
+10805080   _gesture_ct
+80172650   _getConvexHull
+80172c84   _getFingerNum
+80173734   _getGesture
+8015d380   _hand
+10808cec   _hullSize
+10808d34   _i2c_timeout
+10808cd8   _in_prev
+10808d08   _inactiveFrames
+80172c04   _initButtons
+80172a6c   _initDataStructures_Blk
+801766a0   _initDist
+8017720c   _initEcho
+80177650   _initFlanger
+80176f00   _initPhaser
+80176e60   _init_filters
+80176dc4   _init_lfo
+108041e0   _internal_buffer_1D
+10804530   _k_x
+10804558   _k_y
+108046e0   _l_x
+108046f8   _l_y
+8017e580   _ldexp
+10808cf0   _lett_start_x
+10804840   _lfo
+10808c98   _lfo_gain
+10808cac   _loop_count
+80180fa0   _lseek
+80181060   _ltoa
+10804580   _m_x
+108045b8   _m_y
+80177884   _main
+8017f280   _malloc
+10808c1c   _maxBlkCol
+10808c14   _maxBlkRow
+10808c7c   _max_val
+801824e0   _memccpy
+80181820   _memcpy
+80180800   _memset
+10808c20   _minBlkCol
+10808c18   _minBlkRow
+80182540   _modff
+801738b4   _outputDisplay
+10808cb4   _p1
+10808cbc   _p2
+10808cc4   _p3
+10808ccc   _p4
+10808cf8   _p_start_y
+10804350   _p_x
+10804378   _p_y
+80175840   _paint
+801754c4   _paintCal
+80174280   _paintConvexHull
+80174344   _paintDist
+80175064   _paintEcho
+80173e18   _paintEffectNames
+80174c10   _paintFlanger
+80174870   _paintPhaser
+801741c8   _paintSystemToggle
+80172548   _partition
+10808c88   _period
+10804da4   _phaser
+10808c9c   _phaser_lfo_count
+10808cdc   _playCnt
+8016b480   _pot_pts
+10808c78   _preAmp
+10808c80   _prev_filt_in
+10808c84   _prev_filt_out
+801820a0   _printf
+80172ea0   _processHand
+8017f6e0   _putc
+80172624   _quickSort
+108045f0   _r_x
+10804610   _r_y
+80182120   _readmsg
+10804e10   _recentCentroids
+10805098   _recentGestures
+801829a0   _remove
+10808d14   _resetGesture_ct
+10808d40   _rom_version
+10804790   _s_x
+108047c0   _s_y
+10808c2c   _scale_factor
+8017ec40   _setvbuf
+10808ce8   _sine_mod
+8017bd40   _sinf
+10808c64   _size_L
+10808c44   _size_a
+10808c40   _size_b
+10808c48   _size_c
+10808c30   _size_d
+10808c58   _size_d_lc
+10808c3c   _size_e
+10808c38   _size_f
+10808c5c   _size_g
+10808c4c   _size_k
+10808c60   _size_l
+10808c50   _size_m
+10808c34   _size_p
+10808c54   _size_r
+10808c6c   _size_s
+10808c68   _size_t_let
+10808c70   _size_zero
+8017d7c0   _sqrt
+10804df8   _start
+80172500   _swap
+10805068   _sys_tog
+10804750   _t_x
+10804770   _t_y
+8017f478   _tvp5146_init
+8017f434   _tvp5146_rget
+8017f400   _tvp5146_rset
+801821a0   _unlink
+80175d8c   _updateFaders
+10800420   _vector1
+10800540   _vector10
+10800560   _vector11
+10800580   _vector12
+108005a0   _vector13
+108005e0   _vector15
+10800440   _vector2
+10800460   _vector3
+10800480   _vector4
+108004a0   _vector5
+108004c0   _vector6
+108004e0   _vector7
+10800500   _vector8
+10800520   _vector9
+10800400   _vectors
+8017a3cc   _video_loopback_test
+10808cb0   _w1
+10808cb8   _w2
+10808cc0   _w3
+10808cc8   _w4
+80181120   _write
+801825a0   _writemsg
+10808d18   _x_thresh_fist
+10808d20   _x_thresh_five
+10808d1c   _y_thresh_fist
+108047f0   _zero_x
+10804818   _zero_y
+ffffffff   binit
+10805898   cinit
+10800800   edata
+10808d43   end
+801829e0   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00001000   __STACK_SIZE
+00001000   __SYSMEM_SIZE
+10800000   _boot
+10800400   _vectors
+10800420   _vector1
+10800440   _vector2
+10800460   _vector3
+10800480   _vector4
+108004a0   _vector5
+108004c0   _vector6
+108004e0   _vector7
+10800500   _vector8
+10800520   _vector9
+10800540   _vector10
+10800560   _vector11
+10800580   _vector12
+108005a0   _vector13
+108005e0   _vector15
+10800800   .data
+10800800   ___data__
+10800800   ___edata__
+10800800   edata
+108008d0   _binary_hand
+10801300   _binary_boundary
+10801c60   _display
+108041e0   _internal_buffer_1D
+10804300   _d_x
+10804328   _d_y
+10804350   _p_x
+10804378   _p_y
+108043a0   _f_x
+108043c0   _f_y
+108043e0   _e_x
+10804408   _e_y
+10804430   _b_x
+10804460   _b_y
+10804490   _a_x
+108044b8   _a_y
+108044e0   _c_x
+10804508   _c_y
+10804530   _k_x
+10804558   _k_y
+10804580   _m_x
+108045b8   _m_y
+108045f0   _r_x
+10804610   _r_y
+10804630   _d_lc_x
+10804658   _d_lc_y
+10804680   _g_x
+108046b0   _g_y
+108046e0   _l_x
+108046f8   _l_y
+10804710   _L_x
+10804730   _L_y
+10804750   _t_x
+10804770   _t_y
+10804790   _s_x
+108047c0   _s_y
+108047f0   _zero_x
+10804818   _zero_y
+10804840   _lfo
+108049d0   _buffer_flanger
+10804d90   _dist
+10804da4   _phaser
+10804db8   _flanger
+10804dcc   _echo
+10804de0   _btnBotLeft
+10804dec   _centroid
+10804df8   _start
+10804e04   _curCentroid
+10804e10   _recentCentroids
+10805068   _sys_tog
+10805080   _gesture_ct
+10805098   _recentGestures
+108054f0   __ftable
+108055e0   __tmpnams
+10805680   __ft_end
+10805684   _errno
+1080587c   __cleanup_ptr
+10805880   __dtors_ptr
+10805884   ___TI_enable_exit_profile_output
+10805888   __lock
+1080588c   __unlock
+10805898   ___cinit__
+10805898   cinit
+10806950   __stack
+10807950   __STACK_END
+10807950   __sys_memory
+10808950   __ctypes_
+10808c10   $bss
+10808c10   .bss
+10808c10   ___bss__
+10808c10   _flag
+10808c12   _aic33handle
+10808c14   _maxBlkRow
+10808c18   _minBlkRow
+10808c1c   _maxBlkCol
+10808c20   _minBlkCol
+10808c24   _faderBottom
+10808c28   _faderDispW
+10808c2c   _scale_factor
+10808c30   _size_d
+10808c34   _size_p
+10808c38   _size_f
+10808c3c   _size_e
+10808c40   _size_b
+10808c44   _size_a
+10808c48   _size_c
+10808c4c   _size_k
+10808c50   _size_m
+10808c54   _size_r
+10808c58   _size_d_lc
+10808c5c   _size_g
+10808c60   _size_l
+10808c64   _size_L
+10808c68   _size_t_let
+10808c6c   _size_s
+10808c70   _size_zero
+10808c74   _flag_systemOn
+10808c75   _flag_selectFx
+10808c76   _flag_tuneFx
+10808c77   _flag_resetGesture
+10808c78   _preAmp
+10808c7c   _max_val
+10808c80   _prev_filt_in
+10808c84   _prev_filt_out
+10808c88   _period
+10808c8c   _gamma
+10808c90   _a
+10808c94   _b
+10808c98   _lfo_gain
+10808c9c   _phaser_lfo_count
+10808ca0   _flanger_lfo_count
+10808ca4   _G_fb
+10808ca8   _depth
+10808cac   _loop_count
+10808cb0   _w1
+10808cb4   _p1
+10808cb8   _w2
+10808cbc   _p2
+10808cc0   _w3
+10808cc4   _p3
+10808cc8   _w4
+10808ccc   _p4
+10808cd0   _ap1_prev
+10808cd2   _ap2_prev
+10808cd4   _ap3_prev
+10808cd6   _ap4_prev
+10808cd8   _in_prev
+10808cdc   _playCnt
+10808ce0   _gain_ff
+10808ce4   _gain_fb
+10808ce8   _sine_mod
+10808cec   _hullSize
+10808cf0   _lett_start_x
+10808cf4   _d_start_y
+10808cf8   _p_start_y
+10808cfc   _f_start_y
+10808d00   _e_start_y
+10808d04   _curGesture
+10808d08   _inactiveFrames
+10808d0c   _finger_ct
+10808d10   _frame_ct
+10808d14   _resetGesture_ct
+10808d18   _x_thresh_fist
+10808d1c   _y_thresh_fist
+10808d20   _x_thresh_five
+10808d34   _i2c_timeout
+10808d40   _rom_version
+10808d41   _chipid_msb
+10808d42   _chipid_lsb
+10808d43   ___end__
+10808d43   end
+10808d44   __CIOBUF_
+80000000   _buffer_out
+800a8c00   _buffer_in
+80151800   _buffer_echo
+8015d380   _hand
+80164400   _convex_hull
+8016b480   _pot_pts
+80172500   .text
+80172500   ___text__
+80172500   _swap
+80172548   _partition
+80172624   _quickSort
+80172650   _getConvexHull
+80172a6c   _initDataStructures_Blk
+80172c04   _initButtons
+80172c84   _getFingerNum
+80172df0   _findCentroid
+80172ea0   _processHand
+80173734   _getGesture
+80173878   _clearDisplay
+801738b4   _outputDisplay
+80173e18   _paintEffectNames
+801741c8   _paintSystemToggle
+80174280   _paintConvexHull
+80174344   _paintDist
+80174870   _paintPhaser
+80174c10   _paintFlanger
+80175064   _paintEcho
+801754c4   _paintCal
+80175840   _paint
+80175d8c   _updateFaders
+80175f54   _frameProcessing
+80176598   _apply_dist
+801766a0   _initDist
+801768f4   _apply_phase
+80176dc4   _init_lfo
+80176e60   _init_filters
+80176f00   _initPhaser
+80177110   _apply_echo
+8017720c   _initEcho
+80177444   _apply_flange
+80177650   _initFlanger
+80177884   _main
+80177e20   __divd
+801784c0   __MCASP_setRGBLCTL
+80178514   __MCASP_setXGBLCTL
+8017856c   _EVMDM6437_MCASP_open
+80178980   _EVMDM6437_MCASP_close
+80179460   __printfi
+801798c0   _EVMDM6437_enablePll1
+80179ac4   _EVMDM6437_enablePll2
+80179d20   __divf
+8017a3cc   _video_loopback_test
+8017a4e0   _EVMDM6437_startupGEL
+8017a540   _EVMDM6437_init
+8017a574   __setupPinMux
+8017a5b0   __setPinMux
+8017a5f4   __clrPinMux
+8017a638   __resetEMIF
+8017a734   __setupEMIF
+8017a818   __wait
+8017a84c   __waitusec
+8017a880   __addf
+8017b180   _fputs
+8017b480   __FLASH_getId
+8017b584   __FLASH_getMfg
+8017b598   _EVMDM6437_FLASH_getTotalPages
+8017b6d8   __FLASH_getPageLength
+8017b6e4   __FLASH_nextPage
+8017bd40   _sinf
+8017c2a0   _EVMDM6437_AIC33_rget
+8017c350   _EVMDM6437_AIC33_rset
+8017c3b8   _EVMDM6437_AIC33_rset_mask
+8017c474   _EVMDM6437_AIC33_config
+8017c540   _free
+8017c7c0   __divull
+8017ca20   __mpyd
+8017cc80   _EVMDM6437_I2C_init
+8017ccc0   _EVMDM6437_I2C_close
+8017ccd4   _EVMDM6437_I2C_reset
+8017cce8   _EVMDM6437_I2C_write
+8017cde0   _EVMDM6437_I2C_read
+8017cee0   _extint14_isr
+8017d140   _EVMDM6437_PSC_enableAll
+8017d1f0   _EVMDM6437_PSC_changeState
+8017d7c0   _sqrt
+8017d9e0   __addd
+8017dbe0   __frcaddd
+8017dde0   __mpyf
+8017e1e0   _EVMDM6437_I2C_GPIO_init
+8017e1f8   _EVMDM6437_I2C_GPIO_getall
+8017e220   _EVMDM6437_I2C_GPIO_setall
+8017e244   _EVMDM6437_I2C_GPIO_setOutput
+8017e2f4   _EVMDM6437_I2C_GPIO_getInput
+8017e348   _EVMDM6437_I2C_GPIO_setupIntr
+8017e380   _EVMDM6437_I2C_GPIO_checkIntr
+8017e390   _EVMDM6437_I2C_GPIO_waitForIntr
+8017e580   _ldexp
+8017e740   _EVMDM6437_GPIO_init
+8017e754   _EVMDM6437_GPIO_setDir
+8017e7f4   _EVMDM6437_GPIO_setOutput
+8017e884   _EVMDM6437_GPIO_getInput
+8017e900   __divul
+8017eaa0   _frexp
+8017ec40   _setvbuf
+8017ede0   _EVMDM6437_AIC33_openCodec
+8017ef80   _HOSTrename
+8017f100   __frcmpyd_div
+8017f280   _malloc
+8017f400   _tvp5146_rset
+8017f434   _tvp5146_rget
+8017f478   _tvp5146_init
+8017f580   _EVMDM6437_DDR_init
+8017f6e0   _fputc
+8017f6e0   _putc
+8017f960   _EVMDM6437_FLASH_init
+8017f9ac   __FLASH_waitWhileErasing
+8017fa18   __FLASH_waitWhileProgramming
+8017fbc0   _fclose
+8017fce0   _HOSTlseek
+8017fde0   __auto_init
+8017fee0   __frcmpyd
+801800e0   __wrt_ok
+801801e0   _HOSTopen
+801802c0   __cmpd
+801803a0   __c6xabi_divi
+801803a0   __divi
+80180480   __roundf
+80180560   _atoi
+80180640   _close
+80180720   _exit
+80180800   _memset
+801808e0   _HOSTread
+801809a0   _HOSTunlink
+80180a60   _HOSTwrite
+80180b20   __cleanup
+80180ca0   __c6xabi_divu
+80180ca0   __divu
+80180d60   __doflush
+80180e20   __c6xabi_remi
+80180e20   __remi
+80180ee0   _fseek
+80180fa0   _lseek
+80181060   _ltoa
+80181120   _write
+801811e0   _HOSTclose
+80181280   __cvtdf
+80181320   __divli
+80181500   __fixdli
+801815a0   __frcmpyf_div
+801816e0   _copy_in
+80181820   _memcpy
+80181a00   _EVMDM6437_AIC33_closeCodec
+80181aa0   _EVMDM6437_AIC33_read16
+80181b40   _EVMDM6437_AIC33_read32
+80181be0   _EVMDM6437_AIC33_write16
+80181c80   _EVMDM6437_AIC33_write32
+80181d20   __cmpf
+80181da0   __fixdi
+80181e20   __fixdu
+80181ea0   __fixfi
+80181f20   __fltlid
+80181fa0   __llshl
+80182020   __renormd
+801820a0   _printf
+80182120   _readmsg
+801821a0   _unlink
+80182220   _EVMDM6437_DIP_init
+8018222c   _EVMDM6437_DIP_get
+801822a0   __cvtfd
+80182300   __fltid
+80182360   __fltif
+801823c0   __frcmpyf
+80182420   __subcull
+80182480   _c_int00
+801824e0   _memccpy
+80182540   _modff
+801825a0   _writemsg
+801825f8   C$$IO$$
+80182600   ___isinf
+801826c0   __args_main
+80182700   __fltud
+80182740   __llshru
+80182780   __negd
+801827c0   __negf
+80182800   __remli
+80182840   __subd
+80182880   __subf
+801828e0   __negll
+80182900   __nop
+80182960   __truncf
+80182980   C$$EXIT
+80182980   _abort
+801829a0   _remove
+801829e0   ___etext__
+801829e0   etext
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[378 symbols]
