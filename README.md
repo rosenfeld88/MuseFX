@@ -1,7 +1,7 @@
 # MuseFX
 MuseFX is a system featuring hand-gesture controlled audio effects.
 
-The file MuseFX_v2_main_calib.c contains all program functionality. Program functionality described below:
+The file MuseFX_main.c contains all program functionality. Program functionality described below:
 The current MuseFX prototype features a suite of four digital effects: distortion, phase shifter (phaser), flanger, and echo. MuseFX utilizes video input for capturing hand gestures and subsequently controlling the program. The program first calibrates the fist and five finger (open hand) gestures to increase robustness to varying hand sizes. The program uses the convex hull of the hand to recognize hand gestures. The system  also uses the convex hull centroid as a cursor on the effect-specific screens. After calibration, the program flows as follows:
 
 1. System must first be turned on with the five finger gesture (indicator in top-left corner of screen turns green when the system is on). This screen is known as the effect-selection screen.
