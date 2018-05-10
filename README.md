@@ -19,3 +19,5 @@ The current MuseFX prototype features a suite of four digital effects: distortio
 7. Enabled effects have corresponding labels highlighted in green. 
 
 Gesture recognition is achieved with the following algorithms: skin detection, edge detection, Graham's Scan, and convex hull analysis.
+
+MuseFX is designed for use with the TI DM6437 DSP unit.
